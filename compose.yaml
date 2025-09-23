@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jupyter:
-    image: jupyter/scipy-notebook:latest
+    image: taps-data-analysis:latest
     container_name: taps-data-analysis
     ports:
       - "8888:8888"
