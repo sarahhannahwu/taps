@@ -1,3 +1,9 @@
+# Virtual environment (not used now with docker)
 .venv
-student_synthetic_data.csv
-student_synthetic_data_num.csv
+
+# Data
+*.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/

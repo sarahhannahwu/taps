@@ -8,4 +8,7 @@ services:
     ports:
       - "8888:8888"
     restart: unless-stopped
+    volumes:
+      - ./notebooks:/app/notebooks
+      - ./data:/app/data
     user: root
