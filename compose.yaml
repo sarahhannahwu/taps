@@ -1,13 +1,13 @@
-version: '3.8'
+version: "3.8"
 
 services:
   jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: taps-data-analysis:latest
     container_name: taps-data-analysis
     ports:
       - "8888:8888"
-    environment:
-      - JUPYTER_ENABLE_LAB=yes
     restart: unless-stopped
     user: root
-    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_root=True
