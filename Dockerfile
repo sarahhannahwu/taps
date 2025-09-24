@@ -26,9 +26,6 @@ RUN pip install --upgrade pip && \
 # Install Jupyter if not in requirements.txt
 RUN pip install jupyter notebook
 
-# Copy your notebook files
-COPY . .
-
 # Expose the port Jupyter will run on
 EXPOSE 8888
 
